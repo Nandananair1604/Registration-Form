@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <header>
+      <h1>Event Registration</h1>
+      <p>Fill in your details to participate in the event</p>
+    </header>
+
+    <form class="form">
+
+      <!-- Personal Details -->
+      <section class="section">
+        <h3>Personal Details</h3>
+
+        <div class="grid">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="10-digit mobile number">
+          </div>
+
+          <div class="field">
+            <label>Gender</label>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input type="radio" name="gender"> Male
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="gender"> Female
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="gender"> Other
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Details -->
+      <section class="section">
+        <h3>Event Details</h3>
+
+        <div class="grid">
+          <div class="field">
+            <label>Select Event</label>
+            <select>
+              <option>Select an event</option>
+              <option>Workshop</option>
+              <option>Seminar</option>
+              <option>Hackathon</option>
+              <option>Cultural Event</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Participation Mode</label>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input type="radio" name="mode"> Online
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="mode"> Offline
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Event Date</label>
+            <input type="date">
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional Information -->
+      <section class="section">
+        <h3>Additional Information</h3>
+
+        <div class="field full">
+          <label>Message</label>
+          <textarea rows="3" placeholder="Any special requirements"></textarea>
+        </div>
+
+        <div class="field checkbox full">
+          <label>
+            <input type="checkbox" required>
+            I confirm that the above details are correct
+          </label>
+        </div>
+      </section>
+
+      <button type="submit">Submit Registration</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
