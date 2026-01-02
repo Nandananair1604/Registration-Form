@@ -3,6 +3,7 @@
 }
 
 body {
+  background-image: url("about_the_eif.jpg") ;
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
   background-color: #f4f6f8;
@@ -119,3 +120,4 @@ button {
 
 button:hover {
   background-color: #2980b9;
+}
